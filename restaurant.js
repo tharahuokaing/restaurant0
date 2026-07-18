@@ -47,8 +47,8 @@ function renderGrid(data) {
                     <span class="text-[10px] font-bold tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200/40">
                         HK-${String(branch.id).padStart(2, '0')}
                     </span>
-                    <span class="text-xs font-semibold text-emerald-600 flex items-center gap-1">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Open Now
+                    <span class="text-xs font-semibold text-red-600 flex items-center gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span> Temporarily Closed
                     </span>
                 </div>
                 
