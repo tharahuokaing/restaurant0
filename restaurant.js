@@ -21,7 +21,7 @@ const branchData = [
     { id: 19, nameKh: "សាខាសៀមប៉ាង", nameEn: "Siem Pang Branch", provinceKh: "ខេត្តស្ទឹងត្រែង", provinceEn: "Stung Treng Province", url: "https://tharahuokaing.github.io/restaurant19/" },
     { id: 20, nameKh: "សាខាអង្គរធំ", nameEn: "Angkor Thom Branch", provinceKh: "ខេត្តសៀមរាប", provinceEn: "Siem Reap Province", url: "https://tharahuokaing.github.io/restaurant20/" },
     { id: 21, nameKh: "សាខាអូរជ្រៅ", nameEn: "Ou Chrov Branch", provinceKh: "ក្រុងប៉ោយប៉ែត", provinceEn: "Poipet City", url: "https://tharahuokaing.github.io/restaurant21/" },
-    { id: 22, nameKh: "សាខាចំការមន", nameEn: "Chamkar Mon Branch", provinceKh: "ក្រុងភ្នំពេញ", provinceEn: "Phnom Penh City", url: "https://tharahuokaing.github.io/restaurant22/" }
+    { id: 22, nameKh: "ប្រាំពីរមករា (City Mall)", nameEn: "7 Makara Branch", provinceKh: "ក្រុងភ្នំពេញ", provinceEn: "Phnom Penh City", url: "https://tharahuokaing.github.io/restaurant22/" }
 ];
 
 let currentLang = 'km';
