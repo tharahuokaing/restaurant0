@@ -41,15 +41,29 @@ function renderGrid(data) {
         const card = document.createElement("div");
         card.className = "restaurant-card bg-white rounded-2xl border border-gray-100 p-6 flex flex-col justify-between transition-all duration-300";
         
+        // Conditional status check for Branch 22 (City Mall) vs others
+        const isOpen = branch.id === 22;
+        const statusHtml = isOpen ? `
+            <span class="text-xs font-semibold text-emerald-600 flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="card-lang-km">បើកដំណើរការ (Open)</span>
+                <span class="card-lang-en hidden">Open</span>
+            </span>
+        ` : `
+            <span class="text-xs font-semibold text-red-600 flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+                <span class="card-lang-km">បិទបណ្តោះអាសន្ន</span>
+                <span class="card-lang-en hidden">Temporarily Closed</span>
+            </span>
+        `;
+        
         card.innerHTML = `
             <div>
                 <div class="flex items-center justify-between mb-3">
                     <span class="text-[10px] font-bold tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200/40">
                         HK-${String(branch.id).padStart(2, '0')}
                     </span>
-                    <span class="text-xs font-semibold text-red-600 flex items-center gap-1">
-                        <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span> Temporarily Closed
-                    </span>
+                    ${statusHtml}
                 </div>
                 
                 <h4 class="text-lg font-bold text-gray-900 group-hover:text-blue-900 transition mb-1">
